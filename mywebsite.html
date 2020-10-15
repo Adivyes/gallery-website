@@ -33,12 +33,28 @@
     </nav>
 </div>
 
-<div id="manubtn">
+<div id="menubtn">
     <img src="img/icons8-menu-100.png" id="menu">
 </div>
 
 
+<script>
+    var menubtn = document.getElementById("menubtn")
+    var menubtn = document.getElementById("sidenav")
+    var menubtn = document.getElementById("menu")
 
+    sidenav.style.right = "-250px";
+
+    menubtn.onclick = function(){
+        if(sidenav.style.right == "-250px"){
+            sidenav.style.right = "0";
+            menu.src = "img"
+        }
+        else{
+            sidenav.style.right = "-250px"; 
+        }
+    }
+</script>
 
     <header>
 
