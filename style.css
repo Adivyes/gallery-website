@@ -1,9 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 #banner{
     background-image: linear-gradient(rgba(0,0,0,0.5),#002396),url(img/Collage.jpg);
     background-size: cover;
@@ -123,3 +122,132 @@ nav ul li a{
 
 #menubtn img:hover{
     width: 25px;
+}
+
+@media screen and (max-width: 770px){
+    .banner-text h1{
+        font-size: 44px;
+        }
+        .banner-btn a{
+          display: block;
+          margin: 20px auto;  
+        }
+}
+
+/* --feature-- */
+
+#feature{
+    width: 100%;
+    padding: 70px 0;
+}
+
+.title-text{
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.title-text p{
+    margin: auto;
+    font-size: 20px;
+    color: #002396;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+.title-text p::after{
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#002396, white);
+    position: absolute;
+    top: -20px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+   border-top-left-radius: 35px; 
+   border-bottom-right-radius: 35px;
+}
+
+.title-text h1{
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+
+.festure-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+ .features{
+    flex-basis: 50%;
+}
+
+
+.features-img{
+    flex-basis: 50%;
+    margin: auto;
+}
+
+.features-img img{
+    width: 70%;
+    border-radius: 20px;
+}
+
+.features h1{
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-size: 25px;
+    color: #002396;
+}
+
+.features-desc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.feature-icon .fa{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    font-size: 30px;
+    line-height: 50px;
+    border-radius: 8px;
+    color: #002396;
+    border: 1px solid #002396;
+} 
+
+.feature-text P{
+    padding: 0 20px;
+    text-align: initial;
+}
+
+@media screen and (max-width: 770px){
+    .title-text h1{
+        font-size: 35px;
+    }
+    .features{
+        flex-basis: 100%;
+    }
+    .features-img{
+        flex-basis: 100%;
+    }
+    .features-img img{
+        width: 100%;
+        
+    } 
+}
+
+/* ------service------- */
+
+#service{
+    width: 100%;
+    padding: 70px 0;
+    background: #efefef;
+}
