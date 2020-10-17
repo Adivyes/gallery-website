@@ -334,3 +334,78 @@ hr{
         bottom: 25%;
     }
 }
+
+/* -------testimonial------------ */
+
+#testimonial{
+    width: 100%;
+    padding: 70PX 0;
+}
+
+.testimonial-row{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.testimonial-col{
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 3px #0023967a ; 
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.testimonial-col p{
+    font-size: 14px;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.user img{
+    width: 40px;
+    margin-right: 20px;
+    border-radius: 3px;
+}
+
+.user-info .fa{
+    margin-left: 10px;
+    color: #2b4170; 
+    font-size: 20px; 
+}
+
+.user-info .fa-instagram{
+    color: #c32aa3;
+}
+
+.user-info small{
+    color: #002396;
+}
+
+.testimonial-col:hover{
+    transform: translateY(-7px);
+}
+
+@media screen and (max-width: 770px){
+    .testimonial-col{
+        flex-basis: 100%;
+    }
+}
+
+
+/* ----footer------ */
+
+
+#footer{
+    padding: 100px 0 20px;
+    background: #efefef;
+}
