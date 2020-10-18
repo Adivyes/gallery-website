@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>A.S</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width =device-width, initial-scale=1">
-    <title>A.S</title>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 </head>
 <body>
 
@@ -25,12 +26,12 @@
 <div id="sidenav">
     <nav>
         <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">FETURES</a></li>
-            <li><a href="#">TOPICS</a></li>
-            <li><a href="#">TESTIMONIAL</a></li>
+            <li><a href="#banner">HOME</a></li>
+            <li><a href="#feature">FETURES</a></li>
+            <li><a href="#service">TOPICS</a></li>
+            <li><a href="#testimonial">COMMENST</a></li>
             <li><a href="#">JOIN US</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="#footer">CONTACT</a></li>
         </ul>
     </nav>
 </div>
@@ -236,6 +237,12 @@
             menu.src="img/icons8-menu-100.png"
         }
     }
+
+    var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
+
 </script>
 
     <header>
