@@ -12,6 +12,7 @@
     <div class="main">
     <header>
      <div class="title-text">
+         <img src="img/רקע שחור.png" class="logo">
         <p>Our weekly topics</p>
         <h1>GALLERY</h1>
      </div>
@@ -25,8 +26,24 @@
             <a href="#section2">OLD CARS</a>|
             <a href="#section3">TREES</a>|
             <a href="#section4">RELIGIOUS</a>
-
      </div>
+
+     <div id="sidenav">
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/mywebsite.html">HOME</a></li>
+                <li><a href="#">JOIN US</a></li>
+                <li><a href="#">TOPICS</a></li>
+                <li><a href="#">COMMENST</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div id="menubtn">
+        <img src="img/icons8-menu-100.png" id="menu">
+    </div>
+    
  </section>
 
  <section class="topic">
@@ -126,9 +143,29 @@
                     <i class="fa fa-youtube"></i>
                     <p>© 2020 Adiv shenkor.  All rights reserved.</p>
                 </div>
+
             </footer>
 
 </div>
  
+<script>
+    var menubtn = document.getElementById("menubtn")
+    var menubtn = document.getElementById("sidenav")
+    var menubtn = document.getElementById("menu")
+
+    sidenav.style.right = "-250px";
+
+menubtn.onclick = function(){
+    if(sidenav.style.right == "-250px"){
+        sidenav.style.right = "0";
+        menu.src="img/icons-x.png";
+    }
+    else{
+        sidenav.style.right = "-250px"; 
+        menu.src="img/icons8-menu-100.png"
+    }
+}
+</script>
+
 </body>
 </html>
