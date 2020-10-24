@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallery-style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>A.S</title>
+</head>
+<body>
+    
+    <div class="background">
+    <header>
+        <div class="title-text">
+            <img src="img/רקע שחור.png" class="logo">
+           <p>About A.S Famely</p>
+           <h1 id="section-top">ABOUT US</h1>
+        </div>
+    </header>
+
+    <section>
+        <div class="aboutus">
+            <h3>
+                Hello dear user.<br><br> About us
+                My name is Adiv Shenkor and I have a degree in film and photography from Sapir College. 
+                I came to film studies thanks to my love of photography and<br><br> the desire to make my mark in the world through art.
+                 Today I want to tell you a little about A. S Photography.
+                Over the years, so many photo apps have been<br><br> introduced to our world, some useful and some less so. 
+                What is certain is that none of the apps gave meaning to the photos shown. We in the A.S family decided<br><br> to
+                 make a change and give the world of photography the value it has lost over the years. I present to you A.S 
+                 Photography World that combines professional<br><br> photography with learning, sharing works with the best in the photography industry.
+                  We are here to improve the quality of photography in the world, to create<br><br> more and more photographers who will love their works
+                   and most importantly to give real meaning to photography.
+                 
+                "one picture is worth a thousand words". 
+            </h3>
+        </div>
+    </section>
+
+
+    <nav>
+        <div id="sidenav">
+            <nav>
+                <ul>
+                    <li><a href="http://127.0.0.1:5500/mywebsite.html">HOME</a></li>
+                    <li><a href="http://127.0.0.1:5500/gallery-grid.html">GALLERY</a></li>
+                    <li><a href="http://127.0.0.1:5500/mywebsite.html#service">TOPICS</a></li>
+                    <li><a href="http://127.0.0.1:5500/mywebsite.html#testimonial">COMMENST</a></li>
+                    <li><a href="http://127.0.0.1:5500/mywebsite.html#footer">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div id="menubtn">
+            <img src="img/icons8-menu-100.png" id="menu">
+        </div>
+    </nav>
+</div>
+
+    <footer>
+
+        <div class="social-links">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-youtube"></i>
+            <p>© 2020 Adiv shenkor.  All rights reserved.</p>
+        </div>
+    
+    </footer>
+    
+    <script>
+      var menubtn = document.getElementById("menubtn")
+      var menubtn = document.getElementById("sidenav")
+      var menubtn = document.getElementById("menu")
+    
+      sidenav.style.right = "-250px";
+    
+    menubtn.onclick = function(){
+      if(sidenav.style.right == "-250px"){
+          sidenav.style.right = "0";
+          menu.src="img/icons-x.png";
+      }
+      else{
+          sidenav.style.right = "-250px"; 
+          menu.src="img/icons8-menu-100.png"
+      }
+    }
+    </script>
+</div>
+</body>
+</html>
