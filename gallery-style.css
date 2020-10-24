@@ -137,7 +137,7 @@ nav ul li a{
 
  .section .img-text{
     font-size: 25px;
-
+    text-align: center;
     border-radius: 10px;
     box-shadow: 0 10px 20px 3px #0023967a ; 
  }
@@ -218,6 +218,18 @@ background: rgba(0, 0, 0, 0.05);
           display: block;
           margin: 20px auto;  
         }
+
+        .logo{
+            width: 50px;
+        }
+        .title-text p{
+            font-size: 15px;
+        }
+
+        .title-text h1{
+            font-size: 30px;
+        }
+      
 }
 
 .register{
