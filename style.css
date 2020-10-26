@@ -3,11 +3,14 @@
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* -----home page------- */
+
 #banner{
     background-image: linear-gradient(rgba(0,0,0,0.5),#002396),url(img/Collage.jpg);
-    background-size: cover;
+     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 100vh; 
 }
 
 .logo{
@@ -24,19 +27,20 @@
 }
 
 .banner-text h1{
-font-size: 80px;
-font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 80px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .banner-text p{
     padding: 2%;
     font-family: 'Times New Roman', Times, serif;
-font-size: 30px;
-font-style: italic;
+    font-size: 30px;
+    font-style: italic;
 }
 
 .banner-btn{
     margin: 70px;
+    /* padding: 80px; */
 }
 
 .banner-btn a{
@@ -72,13 +76,35 @@ font-style: italic;
     color: black;
 }
 
+@media screen and (max-width: 770px){
+    .banner-text h1{
+        font-size: 35px;
+        }
+        .banner-btn a{
+          display: block;
+          margin: 20px auto;  
+        }
+        .banner-text p{
+            font-size: 20px;
+     
+        }
+        .logo{
+            width: 50px;
+        }
+}
+
+
+/* --------------------- */
+
+/* -----navegetion panel----- */
+
 #sidenav{
     width: 250px;
     height: 100vh;
     position: fixed;
     right: -250px;
     top: 0;
-    background: #002396;
+    background: linear-gradient( #002396b4, #002396);
     z-index: 2;
     transition: 0.5s ease-out;
 }
@@ -90,6 +116,7 @@ font-style: italic;
 
 nav ul li{
     list-style: none;
+    /* text-align: center; */
     margin: 50px 20px;
 }
 
@@ -103,7 +130,6 @@ nav ul li a{
     height: 50px;
     background: #002396; 
     text-align: center;
-   
     position: fixed;
     right: 30px;
     top: 20px;
@@ -124,15 +150,7 @@ nav ul li a{
     width: 25px;
 }
 
-@media screen and (max-width: 770px){
-    .banner-text h1{
-        font-size: 44px;
-        }
-        .banner-btn a{
-          display: block;
-          margin: 20px auto;  
-        }
-}
+/* ---------------------------- */
 
 /* --feature-- */
 
@@ -229,20 +247,20 @@ nav ul li a{
 }
 
 @media screen and (max-width: 770px){
+    
     .title-text h1{
-        font-size: 35px;
+        font-size: 30px;
+        font-weight: lighter;
     }
-    .features{
-        flex-basis: 100%;
+    .title-text p{
+        font-size: 15px;
     }
-    .features-img{
-        flex-basis: 100%;
+    .features h1{
+        font-size: 17px;
     }
-    .features-img img{
-        width: 100%;
-        
-    } 
+
 }
+/* ------------------------ */
 
 /* ------service------- */
 
@@ -486,6 +504,6 @@ hr{
         font-size: 14px;
     }
     .footer-img{
-        top: 25%;
+        top: 40%;
     }
 }

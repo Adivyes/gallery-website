@@ -4,6 +4,9 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+#body{
+    background: linear-gradient(white, #002396);
+}
 
 /* ---------logo------ */
 
@@ -167,11 +170,13 @@ background: rgba(0, 0, 0, 0.05);
  }
 
 /* -------FOOTER------ */
-footer{
+/* footer{
     padding-top: 23%;
-}
+} */
 
  .social-links{
+     position: fixed;
+     width: 100%;
     text-align: center;
     background: rgba(0, 0, 0, 0.05)
     
